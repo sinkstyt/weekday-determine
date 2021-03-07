@@ -67,4 +67,11 @@ describe('Weekday', () => {
     const thisBool = newDate.isLeapYear();
     expect(thisBool).toEqual(true);
   });
+
+  test("should return the correct day of the week given a date(month, day, year)", () => {
+    let newDate = new Weekday(3, 7, 2021);
+    newDate.whichDay();
+    const correctDay = newDate.dayOfWeek;
+    expect(correctDay).toEqual("Sunday");
+  });
 });

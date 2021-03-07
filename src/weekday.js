@@ -3,6 +3,7 @@ export default function Weekday(day, month, year) {
   this.month = month;
   this.year = year;
   this.message = '';
+  this.dayOfWeek = '';
 }
 
 Weekday.prototype.isValidDayNumber = function() {
@@ -30,3 +31,7 @@ Weekday.prototype.isLeapYear = function() {
     return false;
   }
 };
+
+Weekday.prototype.whichDay = function() {
+  return "Saturday";
+}
