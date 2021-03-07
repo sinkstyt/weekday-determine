@@ -13,6 +13,13 @@ describe('Weekday', () => {
     const userDate = new Weekday(-5, 0, 2001);
     userDate.isValidDayNumber();
     const result = userDate.message;
-    expect(result).toEqual("Please enter a valid day number for this month");
+    expect(result).toEqual("please enter a valid number day for this month");
+  });
+
+  test('should return a string asking for a valid number for month, given a value that is greater than 12', () => {
+    let userDateTest = new Weekday(3, 14, 2034);
+    userDateTest.isValidMonth();
+    const result = userDateTest.message;
+    expect(result).toEqual("please enter a valid month number");
   });
 });
