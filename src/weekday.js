@@ -24,5 +24,5 @@ Weekday.prototype.isValidYear = function() {
 };
 
 Weekday.prototype.isLeapYear = function() {
-  return true;
+  return false;
 };
