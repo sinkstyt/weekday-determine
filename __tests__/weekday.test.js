@@ -27,5 +27,12 @@ describe('Weekday', () => {
     userDateTest.isValidMonth();
     const result = userDateTest.message;
     expect(result).toEqual("please enter a valid month number");
-  })
+  });
+
+  test('should return a string asking for a valid year 1800 AD or later, given a value for year less than 1800', () => {
+    let newDate = new Weekday(3, 7, 1721);
+    newDate.isValidYear();
+    const result = newDate.message;
+    expect(result).toEqual('please enter a valid year');
+  });
 });
