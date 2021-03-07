@@ -61,4 +61,10 @@ describe('Weekday', () => {
     const thisBool = newDate.isLeapYear();
     expect(thisBool).toEqual(false);
   });
+
+  test("should return true for years that are divisible by 400", () => {
+    let newDate = new Weekday(1, 22, 2400);
+    const thisBool = newDate.isLeapYear();
+    expect(thisBool).toEqual(true);
+  });
 });
