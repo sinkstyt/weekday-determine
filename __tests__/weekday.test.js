@@ -47,6 +47,12 @@ describe('Weekday', () => {
   test("should return false for years that are not a leap year", () => {
     let newDate = new Weekday(3, 3, 2022);
     const thisBool = newDate.isLeapYear();
-    expect(thisBool).toEqual("false");
+    expect(thisBool).toEqual(false);
+  });
+
+  test("should return true for years that are divisible by 4", () => {
+    let newDate = new Weekday(3, 12, 2000);
+    const thisBool = newDate.isLeapYear();
+    expect(thisBool).toEqual(true);
   });
 });
