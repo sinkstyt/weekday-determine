@@ -22,6 +22,7 @@ describe('Weekday', () => {
     const result = userDateTest.message;
     expect(result).toEqual("please enter a valid month number");
   });
+
   test('should return a string asking for a valid number for month, given a value that is less than 1', () => {
     let userDateTest = new Weekday(3, -5, 2034);
     userDateTest.isValidMonth();
@@ -41,5 +42,11 @@ describe('Weekday', () => {
     newDate.isValidYear();
     const result = newDate.message;
     expect(result).toEqual('please enter a valid year');
+  });
+
+  test("should return false for years that are not a leap year", () => {
+    let newDate = new Weekday(3, 3, 2022);
+    const thisBool = newDate.isLeapYear();
+    expect(thisBool).toEqual("false");
   });
 });
