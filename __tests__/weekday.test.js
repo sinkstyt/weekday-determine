@@ -36,7 +36,7 @@ describe('Weekday', () => {
     expect(result).toEqual('please enter a valid year');
   });
 
-  test('should return a string asking for a valid year 3001 AD or later, given a value for year greater than 3000', () => {
+  test('should return a string asking for a valid year 3001 AD or earlier, given a value for year greater than 3000', () => {
     let newDate = new Weekday(3, 7, 3001);
     newDate.isValidYear();
     const result = newDate.message;

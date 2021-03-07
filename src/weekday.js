@@ -18,7 +18,7 @@ Weekday.prototype.isValidMonth = function() {
 };
 
 Weekday.prototype.isValidYear = function() {
-  if (this.year < 1800) {
+  if (this.year < 1800 || this.year > 3000) {
     this.message += 'please enter a valid year';
   }
 };
