@@ -12,7 +12,9 @@ Weekday.prototype.isValidDayNumber = function() {
 };
 
 Weekday.prototype.isValidMonth = function() {
-
+  if (this.month > 12) {
+    this.message += "please enter a valid month number";
+  }
 };
 
 
