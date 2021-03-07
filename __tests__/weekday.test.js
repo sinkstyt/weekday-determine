@@ -22,4 +22,10 @@ describe('Weekday', () => {
     const result = userDateTest.message;
     expect(result).toEqual("please enter a valid month number");
   });
+  test('should return a string asking for a valid number for month, given a value that is less than 1', () => {
+    let userDateTest = new Weekday(3, -5, 2034);
+    userDateTest.isValidMonth();
+    const result = userDateTest.message;
+    expect(result).toEqual("please enter a valid month number");
+  })
 });
