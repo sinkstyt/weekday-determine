@@ -8,7 +8,7 @@ export default function Weekday(day, month, year) {
 
 Weekday.prototype.isValidDayNumber = function() {
   if(this.day > 31) {
-    // this.message += "please enter a valid number day for this month";
+    this.message += "please enter a valid number day for this month";
   }
 };
 
