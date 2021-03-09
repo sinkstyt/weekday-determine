@@ -1,4 +1,4 @@
-import Weekday from './../src/weekday.js';
+import { Weekday } from './../src/weekday.js';
 
 describe('Weekday', () => {
 
