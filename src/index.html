@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day of Week</title>
+</head>
+<body>
+  <div class = "jumbotron">
+    <h1>Find day of the week!</h1>
+  </div>
+  <div class="container">
+    <form id = "date">
+      <label for="year">Choose a year between 1800 and 3000:</label>
+      <input type="text" id="year" required>
+      <label for="month">Select month:</label>
+      <select id="month" required>
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+      </select>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <form id="pick-day-number" class="form-group">
+      <label for="day-number">Select day of the month</label>
+      <input type="number" id="day-number" min="1" max="31">
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+  <div id="result">
+    <p>Day of the week: <span></span></p>
+  </div>
+
+
+  
+</body>
+</html>
