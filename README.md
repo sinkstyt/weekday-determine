@@ -27,7 +27,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _This project does not yet have a front end._
+* _This project now has a front end, but it is not functioning exactly as it authors hope it to function. Namely it does not yet write to the DOM the weekday given the user's input date._
 
 ## License
 
