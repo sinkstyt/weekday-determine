@@ -15,24 +15,34 @@
 
 _The page prompts you to enter a date (Month, Day, Year), and it displays the day of the week of your entered date. The logic has been configured to limit dates to those after 1800 and before the year 3001._
 
-## Setup/Installation Requirements
-
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+## Setup/Installation Requirements (install this repository on your machine)
+* Copy the following link to your clipboard: https://github.com/sinkstyt/weekday-determiner.git
+* Open a Bash Terminal (some might call it a 'command line')
+* In this terminal window, navigate to a directory into which you will clone this project (make a local copy from the GitHub remote copy)
+* Within your git bash terminal type in `$ git clone   ` with one space between "clone" and pasted clipboard contents (https://github.com/sinkstyt/weekday-determiner.git)
+> at Terminal promt
+```
+users/YOUR_USERNAME/ $ git clone https://github.com/sinkstyt/weekday-determiner.git
+```
+* After the page has been cloned to your chosen directory, use `$ cd weekday-determiner` to switch into its root folder.
+* Check to see that you have npm installed with the prompt `$ npm -v`. As long as the first number in the version is 3 or greater, you should not anticipate any problems. If you are using OS X or greater and npm is not installed, use the command `$ brew install node`
+* Check node version with `$ node -v`. Node version should start with a 4 or higher.
+* For Windows users without npm, go to https://nodejs.org/en/download/ and download the LTS (long term support) option most appropriate for your system
+* From within the root directory, use the following commands to have npm (Node package manager) install other dependencies
+> `$ npm install`
+* To see the project assembled and rendered in browser, use the following npm prompt. A tab should open to the rendered page.
+> `$ npm run start`
 
 ## Known Bugs
 
-* _This project now has a front end, but it is not functioning exactly as it authors hope it to function. Namely it does not yet write to the DOM the weekday given the user's input date._
+* _This project now has a front end, and it even has some bits of styling!_
+* _No known bugs_
 
 ## License
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_MIT 2.0_
+_This here repository is quite clearly a student project. By all means jump in, offer your additions/stylings/tweaks via pull request. Don't know how to initiate a pull request? ![Read how to request a pull](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request). All we ask is that we all play nicely. Thanks for meddling!_
 
 ## Contact Information
 
-_{Add your contact information here.}_
+![jump to Tyler's GitHub profile](https://github.com/sinkstyt)
+![jump to Marni's GitHub profile](https://github.com/marnionrails)
