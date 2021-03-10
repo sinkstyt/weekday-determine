@@ -38,6 +38,13 @@ Weekday.prototype.whichDay = function() {
   this.dayOfWeek = daysOfWeek[userDate.getDay()];
 };
 
+Weekday.prototype.writeMonth = function() {
+  // array that lists each month
+  const allMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  // use the key called "month" to pick the right month Name
+  this.month = allMonths[this.month];
+};
+
 export function getLastDayOfMonth (year, month) {
   let yearMonth = new Date();
   let lastDay = new Date(yearMonth.setFullYear(year, month +1, 0));
