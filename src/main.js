@@ -16,9 +16,12 @@ $("form#date").submit(function(event) {
 $("form#pick-day-number").submit(function(event) {
   event.preventDefault();
   let inputYear = parseInt($("#year").val());
+  console.log(`inputYear is : ${inputYear}`);
   let inputMonth = parseInt($("#month").val());
+  console.log(`inputMonth is : ${inputMonth}`);
   let inputDay = parseInt($("#day-number").val());
   let newWeekday = new Weekday(inputDay, inputMonth, inputYear);
-  newWeekday = newWeekday.whichDay();
-  $("div#result span").html(newWeekday);
+  newWeekday.whichDay();
+  // $("div#result span").innerHTML(newWeekday);
+  document.getElementById("day").innerHTML = newWeekday.dayOfWeek;
 });
