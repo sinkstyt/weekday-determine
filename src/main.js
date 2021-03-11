@@ -9,7 +9,6 @@ $("form#date").submit(function(event) {
   let userYear = parseInt($("#year").val());
   let userMonth = parseInt($("#month").val());
   const userDaysMax = getLastDayOfMonth(userYear, userMonth);
-  console.log(userDaysMax);
   $("input#day-number").attr("max", userDaysMax);
 });
 
