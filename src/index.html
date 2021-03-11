@@ -8,11 +8,12 @@
 <body>
   <div class = "jumbotron">
     <h1>Find day of the week!</h1>
-    <h3>After choosing a year and month, hit the submit button. Select the day, and submit again to determine the weekday!</h3>
+    <h4>After choosing a year and month, hit the submit button.<br>
+      Then select the day and submit again to see its day of the week!</h4>
   </div>
   <div class="container">
     <form id = "date">
-      <label for="year">Choose a year between 1800 and 3000:</label>
+      <label for="year">Enter a year between 1800 and 3000:</label>
       <input type="text" id="year" required>
       <label for="month">Select month:</label>
       <select id="month" required>
@@ -29,13 +30,13 @@
         <option value="10">November</option>
         <option value="11">December</option>
       </select>
-      <button type="submit" class="btn">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
     <form id="pick-day-number" class="form-group">
       <label for="day-number">Select day of the month</label>
-      <input type="number" id="day-number" min="1" max="31">
-      <button type="submit" class="btn">Submit</button>
+      <input type="number" id="day-number" min="1" max="31" required>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 
@@ -44,7 +45,7 @@
     <div class="history-days">
 
     </div>
+    <button class="clear-history btn btn-primary">Clear All Results</button>
   </div>
-  <button class="clear-history"></button>
 </body>
 </html>

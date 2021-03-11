@@ -22,5 +22,10 @@ $("form#pick-day-number").submit(function(event) {
   newWeekday.whichDay();
   newWeekday.writeMonth();
   let newHtmlP = `<p class="some-result">${newWeekday.dayOfWeek}, ${newWeekday.month} ${newWeekday.day}, ${newWeekday.year}</p>`;
+  $("#result").slideDown();
   $(".history-days").prepend(newHtmlP);
+});
+
+$(".clear-history").on("click", function() {
+  $(".history-days").empty();
 });
