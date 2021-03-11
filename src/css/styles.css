@@ -1,12 +1,27 @@
 body {
-  background-color: lightblue;
+  background-color: rgba(189, 81, 189, 0.728);
   font-family: serif;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
-.jumbotron h1 {
-  text-align: center;
+.container {
+  color: ivory;
+  text-shadow:rgba(72, 28, 72, 0.728) 4px 2px 3px;
+  margin: auto;
 }
 
 #result {
   text-align: center;
+  display: none;
+}
+
+.btn-primary {
+  align-self: center;
+  background-color: darkblue;
+  padding: .25rem .375rem;
+}
+
+#year {
+  width: 3.1rem;
 }
